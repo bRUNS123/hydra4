@@ -1,0 +1,26 @@
+{
+    "helloWorld": "Hello World!",
+    "theme": "Theme",
+    "dark": "Dark",
+    "light": "Light",
+    "blue": "Blue",
+    "language": "Languages",
+    "spanish": "Spanish",
+    "english": "English",
+    "login": "LOGIN",
+    "signup": "SIGN UP",
+    "menu": "Menu 🐍",
+    "chat": "Chat 🐍",
+    "hydra": "Hydra 🐍",
+    "configuration": "Configuration 🐍",
+    "settings": "Settings",
+    "profile": "Profile 🐍",
+    "community": "Community",
+    "favorites": "Favorites",
+    "announcement": "Anuncios",
+    "files": "Files",
+    "notifications": "Notifications",
+    "logout": "Logout",
+    "search": "Search"
+
+}
