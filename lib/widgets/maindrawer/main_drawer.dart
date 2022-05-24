@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../screens/community/community_page.dart';
-import '../../screens/favorites/favorite_page.dart';
+import 'package:hydra/screens/screens.dart';
 
 import '../../widgets/maindrawer/widgets/build_search.dart';
 import '../../widgets/maindrawer/widgets/draw_header.dart';
@@ -49,23 +47,28 @@ class MainDrawWidget extends StatelessWidget {
             icon: (Icons.file_copy_sharp),
             onClicked: () => selectedPage(context, 3),
           ),
+          BuildMenuItem(
+            text: S.of(context).users,
+            icon: (Icons.supervised_user_circle_sharp),
+            onClicked: () => selectedPage(context, 4),
+          ),
           Divider(
             color: Theme.of(context).colorScheme.secondary,
           ),
           BuildMenuItem(
             text: S.of(context).notifications,
             icon: (Icons.notifications_outlined),
-            onClicked: () => selectedPage(context, 4),
+            onClicked: () => selectedPage(context, 5),
           ),
           BuildMenuItem(
             text: S.of(context).settings,
             icon: (Icons.settings),
-            onClicked: () => selectedPage(context, 5),
+            onClicked: () => selectedPage(context, 6),
           ),
           BuildMenuItem(
             text: S.of(context).logout,
             icon: (Icons.logout),
-            onClicked: () => selectedPage(context, 6),
+            onClicked: () => selectedPage(context, 7),
           ),
         ],
       ),
@@ -82,6 +85,9 @@ void selectedPage(BuildContext context, int index) {
       break;
     case 1:
       Navigator.of(context).pushNamed(FavoritePage.routeName);
+      break;
+    case 4:
+      Navigator.of(context).pushNamed(UsersScreen.routeName);
       break;
   }
 }

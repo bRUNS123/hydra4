@@ -45,6 +45,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "signup": MessageLookupByLibrary.simpleMessage("SIGN UP"),
         "spanish": MessageLookupByLibrary.simpleMessage("Spanish"),
-        "theme": MessageLookupByLibrary.simpleMessage("Theme")
+        "theme": MessageLookupByLibrary.simpleMessage("Theme"),
+        "users": MessageLookupByLibrary.simpleMessage("Users")
       };
 }

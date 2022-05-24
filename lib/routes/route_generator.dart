@@ -1,13 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hydra/main.dart';
-import 'package:hydra/screens/auth/welcome/welcome_screen.dart';
-import 'package:hydra/screens/chat/chat_view.dart';
-import 'package:hydra/screens/community/community_page.dart';
-import 'package:hydra/screens/favorites/favorite_page.dart';
-import 'package:hydra/screens/main/main_view.dart';
-
-import '../screens/auth/login/login_screen.dart';
-import '../screens/auth/signup/signup_screen.dart';
+import 'package:hydra/screens/screens.dart';
 
 class RouteGenerator {
   Route onGenerateRoute(RouteSettings settings) {
@@ -35,6 +27,8 @@ class RouteGenerator {
 
       case '/favoritepage':
         return MaterialPageRoute(builder: (_) => const FavoritePage());
+      case '/users':
+        return MaterialPageRoute(builder: (_) => const UsersScreen());
 
       default:
         _errorRoute();

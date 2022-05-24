@@ -73,7 +73,7 @@ class ThemeBloc extends Bloc<ThemeEvent, ThemeState> {
             scaffoldColorDark.withOpacity(0.2), BlendMode.dstATop);
       case 'light':
         return ColorFilter.mode(
-            scaffoldColorLight!.withOpacity(0.2), BlendMode.dstATop);
+            scaffoldColorLight.withOpacity(0.2), BlendMode.dstATop);
       case 'blue':
         return ColorFilter.mode(
             scaffoldColorBlue.withOpacity(0.2), BlendMode.dstATop);
